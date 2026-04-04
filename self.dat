@@ -1,0 +1,262 @@
+[General]
+bypass-system = true
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com
+bypass-tun = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
+dns-server = system
+fallback-dns-server = 1.1.1.1, 8.8.8.8
+ipv6 = true
+prefer-ipv6 = false
+udp-policy-not-supported-behaviour = REJECT
+
+[Rule]
+# =============================================
+# YOUTUBE
+# =============================================
+DOMAIN-KEYWORD,youtube,PROXY
+DOMAIN-KEYWORD,googlevideo,PROXY
+DOMAIN-SUFFIX,youtube.com,PROXY
+DOMAIN-SUFFIX,youtu.be,PROXY
+DOMAIN-SUFFIX,ytimg.com,PROXY
+DOMAIN-SUFFIX,googlevideo.com,PROXY
+DOMAIN-SUFFIX,ggpht.com,PROXY
+DOMAIN-SUFFIX,youtube-nocookie.com,PROXY
+
+# =============================================
+# INSTAGRAM / FACEBOOK / META
+# =============================================
+DOMAIN-KEYWORD,instagram,PROXY
+DOMAIN-KEYWORD,facebook,PROXY
+DOMAIN-SUFFIX,instagram.com,PROXY
+DOMAIN-SUFFIX,cdninstagram.com,PROXY
+DOMAIN-SUFFIX,ig.me,PROXY
+DOMAIN-SUFFIX,igcdn.com,PROXY
+DOMAIN-SUFFIX,facebook.com,PROXY
+DOMAIN-SUFFIX,fb.com,PROXY
+DOMAIN-SUFFIX,fb.me,PROXY
+DOMAIN-SUFFIX,fbcdn.net,PROXY
+DOMAIN-SUFFIX,fbsbx.com,PROXY
+DOMAIN-SUFFIX,fburl.com,PROXY
+DOMAIN-SUFFIX,cdnfacebook.com,PROXY
+DOMAIN-SUFFIX,cdnfbsbx.com,PROXY
+DOMAIN-SUFFIX,meta.com,PROXY
+DOMAIN-SUFFIX,threads.net,PROXY
+IP-CIDR,31.13.24.0/21,PROXY,no-resolve
+IP-CIDR,31.13.64.0/18,PROXY,no-resolve
+IP-CIDR,157.240.0.0/17,PROXY,no-resolve
+IP-CIDR,185.89.218.0/23,PROXY,no-resolve
+IP-CIDR,179.60.192.0/22,PROXY,no-resolve
+
+# =============================================
+# TELEGRAM
+# =============================================
+DOMAIN-KEYWORD,telegram,PROXY
+DOMAIN-SUFFIX,telegram.org,PROXY
+DOMAIN-SUFFIX,telegram.me,PROXY
+DOMAIN-SUFFIX,t.me,PROXY
+DOMAIN-SUFFIX,telesco.pe,PROXY
+DOMAIN-SUFFIX,tdesktop.com,PROXY
+DOMAIN-SUFFIX,telegra.ph,PROXY
+IP-CIDR,91.108.0.0/16,PROXY,no-resolve
+IP-CIDR,149.154.160.0/20,PROXY,no-resolve
+IP-CIDR,185.76.151.0/24,PROXY,no-resolve
+
+# =============================================
+# WHATSAPP
+# =============================================
+DOMAIN-KEYWORD,whatsapp,PROXY
+DOMAIN-SUFFIX,whatsapp.com,PROXY
+DOMAIN-SUFFIX,whatsapp.net,PROXY
+IP-CIDR,3.33.221.48/32,PROXY,no-resolve
+IP-CIDR,15.197.206.217/32,PROXY,no-resolve
+IP-CIDR,15.197.210.208/32,PROXY,no-resolve
+IP-CIDR,50.22.198.204/30,PROXY,no-resolve
+IP-CIDR,75.2.39.134/32,PROXY,no-resolve
+IP-CIDR,169.44.82.166/32,PROXY,no-resolve
+IP-CIDR,185.60.216.0/22,PROXY,no-resolve
+
+# =============================================
+# DISCORD
+# =============================================
+DOMAIN-KEYWORD,discord,PROXY
+DOMAIN-SUFFIX,discord.com,PROXY
+DOMAIN-SUFFIX,discord.gg,PROXY
+DOMAIN-SUFFIX,discordapp.com,PROXY
+DOMAIN-SUFFIX,discordapp.net,PROXY
+DOMAIN-SUFFIX,discord.media,PROXY
+DOMAIN-SUFFIX,discordcdn.com,PROXY
+
+# =============================================
+# TWITTER / X
+# =============================================
+DOMAIN-KEYWORD,twitter,PROXY
+DOMAIN-SUFFIX,twitter.com,PROXY
+DOMAIN-SUFFIX,x.com,PROXY
+DOMAIN-SUFFIX,twimg.com,PROXY
+DOMAIN-SUFFIX,t.co,PROXY
+DOMAIN-SUFFIX,twitpic.com,PROXY
+IP-CIDR,104.244.42.0/21,PROXY,no-resolve
+IP-CIDR,199.16.156.0/22,PROXY,no-resolve
+IP-CIDR,199.59.148.0/22,PROXY,no-resolve
+IP-CIDR,202.160.128.0/22,PROXY,no-resolve
+
+# =============================================
+# LINKEDIN
+# =============================================
+DOMAIN-KEYWORD,linkedin,PROXY
+DOMAIN-SUFFIX,linkedin.com,PROXY
+DOMAIN-SUFFIX,licdn.com,PROXY
+DOMAIN-SUFFIX,lnkd.in,PROXY
+
+# =============================================
+# SPOTIFY
+# =============================================
+DOMAIN-KEYWORD,spotify,PROXY
+DOMAIN-SUFFIX,spotify.com,PROXY
+DOMAIN-SUFFIX,scdn.co,PROXY
+DOMAIN-SUFFIX,spoti.fi,PROXY
+DOMAIN-SUFFIX,spotifycdn.com,PROXY
+
+# =============================================
+# AI SERVICES
+# =============================================
+DOMAIN-SUFFIX,openai.com,PROXY
+DOMAIN-SUFFIX,chatgpt.com,PROXY
+DOMAIN-SUFFIX,ai.com,PROXY
+DOMAIN-SUFFIX,anthropic.com,PROXY
+DOMAIN-SUFFIX,claude.ai,PROXY
+DOMAIN-SUFFIX,perplexity.ai,PROXY
+DOMAIN-SUFFIX,grok.com,PROXY
+DOMAIN-SUFFIX,gemini.google.com,PROXY
+DOMAIN-KEYWORD,openai,PROXY
+DOMAIN-KEYWORD,chatgpt,PROXY
+
+# =============================================
+# GITHUB
+# =============================================
+DOMAIN-KEYWORD,github,PROXY
+DOMAIN-SUFFIX,github.com,PROXY
+DOMAIN-SUFFIX,github.io,PROXY
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
+DOMAIN-SUFFIX,githubassets.com,PROXY
+DOMAIN-SUFFIX,ghcr.io,PROXY
+
+# =============================================
+# REDDIT
+# =============================================
+DOMAIN-KEYWORD,reddit,PROXY
+DOMAIN-SUFFIX,reddit.com,PROXY
+DOMAIN-SUFFIX,redd.it,PROXY
+DOMAIN-SUFFIX,redditmedia.com,PROXY
+DOMAIN-SUFFIX,redditstatic.com,PROXY
+
+# =============================================
+# GAMES: SUPERCELL (Brawl Stars, Clash Royale)
+# =============================================
+DOMAIN-KEYWORD,supercell,PROXY
+DOMAIN-KEYWORD,clashroyale,PROXY
+DOMAIN-KEYWORD,brawlstars,PROXY
+DOMAIN-KEYWORD,clashofclans,PROXY
+DOMAIN-SUFFIX,supercell.com,PROXY
+DOMAIN-SUFFIX,supercell.net,PROXY
+DOMAIN-SUFFIX,clashroyale.com,PROXY
+DOMAIN-SUFFIX,clashroyaleapp.com,PROXY
+DOMAIN-SUFFIX,clashofclans.com,PROXY
+DOMAIN-SUFFIX,brawlstars.com,PROXY
+DOMAIN-SUFFIX,brawlstarsgame.com,PROXY
+IP-CIDR,15.161.130.86/32,PROXY,no-resolve
+IP-CIDR,15.254.1.17/32,PROXY,no-resolve
+IP-CIDR,18.156.137.147/32,PROXY,no-resolve
+IP-CIDR,162.62.33.45/32,PROXY,no-resolve
+IP-CIDR,162.62.33.70/32,PROXY,no-resolve
+IP-CIDR,162.62.34.10/32,PROXY,no-resolve
+
+# =============================================
+# GAMES: ROBLOX
+# =============================================
+DOMAIN-KEYWORD,roblox,PROXY
+DOMAIN-KEYWORD,rbxcdn,PROXY
+DOMAIN-SUFFIX,roblox.com,PROXY
+DOMAIN-SUFFIX,roblox.net,PROXY
+DOMAIN-SUFFIX,rbxcdn.com,PROXY
+DOMAIN-SUFFIX,rbxcdn.net,PROXY
+DOMAIN-SUFFIX,rbxinfra.com,PROXY
+DOMAIN-SUFFIX,rbxinfra.net,PROXY
+DOMAIN-SUFFIX,rbxtrk.com,PROXY
+DOMAIN-SUFFIX,robloxlabs.com,PROXY
+DOMAIN-SUFFIX,robloxcorp.com,PROXY
+DOMAIN-SUFFIX,robloxdev.com,PROXY
+DOMAIN-SUFFIX,rbx.com,PROXY
+DOMAIN-SUFFIX,rblx.com,PROXY
+DOMAIN-SUFFIX,arkoselabs.com,PROXY
+IP-CIDR,128.116.0.0/17,PROXY,no-resolve
+IP-CIDR,103.140.28.0/23,PROXY,no-resolve
+IP-CIDR,103.142.220.0/23,PROXY,no-resolve
+IP-CIDR,23.173.192.0/24,PROXY,no-resolve
+IP-CIDR,141.193.3.0/24,PROXY,no-resolve
+
+# =============================================
+# TIKTOK
+# =============================================
+DOMAIN-KEYWORD,tiktok,PROXY
+DOMAIN-KEYWORD,byteoversea,PROXY
+DOMAIN-KEYWORD,muscdn,PROXY
+DOMAIN-SUFFIX,tiktok.com,PROXY
+DOMAIN-SUFFIX,tiktokcdn.com,PROXY
+DOMAIN-SUFFIX,tiktokv.com,PROXY
+DOMAIN-SUFFIX,musical.ly,PROXY
+
+# =============================================
+# OTHER BLOCKED / RESTRICTED
+# =============================================
+# Torrents
+DOMAIN-KEYWORD,rutracker,PROXY
+DOMAIN-KEYWORD,rutor,PROXY
+DOMAIN-KEYWORD,kinozal,PROXY
+DOMAIN-KEYWORD,nnmclub,PROXY
+DOMAIN-KEYWORD,flibusta,PROXY
+
+# Streaming
+DOMAIN-KEYWORD,hdrezka,PROXY
+DOMAIN-KEYWORD,rezka,PROXY
+DOMAIN-SUFFIX,netflix.com,PROXY
+DOMAIN-SUFFIX,nflxvideo.net,PROXY
+
+# Other
+DOMAIN-KEYWORD,medium,PROXY
+DOMAIN-KEYWORD,notion,PROXY
+DOMAIN-SUFFIX,wikipedia.org,PROXY
+DOMAIN-SUFFIX,wikimedia.org,PROXY
+DOMAIN-SUFFIX,canva.com,PROXY
+DOMAIN-SUFFIX,snapchat.com,PROXY
+DOMAIN-SUFFIX,snap.com,PROXY
+DOMAIN-SUFFIX,sc-cdn.net,PROXY
+DOMAIN-KEYWORD,speedtest,PROXY
+DOMAIN-SUFFIX,ooklaserver.net,PROXY
+
+# Copilot
+DOMAIN-SUFFIX,copilot.microsoft.com,PROXY
+DOMAIN-SUFFIX,sydney.bing.com,PROXY
+
+# Google core (needed for many services above)
+DOMAIN-SUFFIX,googleapis.com,PROXY
+DOMAIN-SUFFIX,gstatic.com,PROXY
+DOMAIN-SUFFIX,googleusercontent.com,PROXY
+
+# Voice call ports (Telegram, WhatsApp, FaceTime)
+AND,((PROTOCOL,UDP),(DEST-PORT,3478)),PROXY
+AND,((PROTOCOL,UDP),(DEST-PORT,4244)),PROXY
+AND,((PROTOCOL,UDP),(DEST-PORT,5222)),PROXY
+AND,((PROTOCOL,UDP),(DEST-PORT,5223)),PROXY
+AND,((PROTOCOL,UDP),(DEST-PORT,5228)),PROXY
+AND,((PROTOCOL,UDP),(DEST-PORT,5242)),PROXY
+AND,((PROTOCOL,UDP),(DEST-PORT,45395)),PROXY
+AND,((PROTOCOL,UDP),(DEST-PORT,50318)),PROXY
+AND,((PROTOCOL,UDP),(DEST-PORT,59234)),PROXY
+
+# =============================================
+# DEFAULT: Everything else goes DIRECT
+# =============================================
+FINAL,DIRECT
+
+[Host]
+localhost = 127.0.0.1
